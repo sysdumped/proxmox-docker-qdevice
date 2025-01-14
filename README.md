@@ -69,10 +69,11 @@ pvecm status
 - You could ssh to docker container from local network or localhost directly using a ssh command like below
 ``` bash
 ssh root@localhost -p 2222
+ssh root@<Docker host IP> -p 2222
 ```
 
 ## Resources.
-- Forked from this project, please give a star to them: https://github.com/bcleonard/proxmox-qdevice/tree/master
+- Forked from this project, please give them a star: https://github.com/bcleonard/proxmox-qdevice
 - https://pve.proxmox.com/wiki/Cluster_Manager
 - https://www.apalrd.net/posts/2022/cluster_qdevice/
 
