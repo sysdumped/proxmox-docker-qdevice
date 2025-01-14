@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Example hash generation: openssl passwd -6 'my_secure_root_password'
+# Example hash generation: openssl passwd -6 'rootpw'
 
 if [ -n "$ROOT_PASSWORD_HASH" ]; then
     echo "Setting root password..."

@@ -2,7 +2,7 @@
 FROM debian:bookworm-slim
 
 # Define build argument for SSH port (non-sensitive)
-ARG SSH_PORT=22
+ARG SSH_PORT=2222
 
 # Install required packages
 RUN apt update \

@@ -65,6 +65,12 @@ pvecm status
 - The Docker container runs an SSH server that permits root logins. Ensure that the NEW_ROOT_PASSWORD is strong and not hardcoded in the docker-compose.yml file to prevent security risks.
 - After the initial setup, consider restricting SSH access to the QDevice container by configuring firewall rules 
 
+## Additional Notes
+- You could ssh to docker container from local network or localhost directly using a ssh command like below
+``` bash
+ssh root@localhost -p 2222
+```
+
 ## Resources.
 - Forked from this project, please give a star to them: https://github.com/bcleonard/proxmox-qdevice/tree/master
 - https://pve.proxmox.com/wiki/Cluster_Manager
