@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  proxmox-docker-qdevice:
+    image: pmox-docker-quorum
+    container_name: proxmox-docker-qdevice
+    environment:
+      # Example root password hash which is generated with openssl passwd -6 'root1234!!' command
+      - ROOT_PASSWORD_HASH=$6$BsZbRNoqxTganb3H$lv5Rlb5JHtudOK6/tmFfwWX6nhs6qReWQ8nrz2S1BiuxlmfzS5T3lhg.H8.weZU47H3oGWzD5qWFoY.WqkXUy.
+    ports:
+      - "2222:2222/tcp"
+      - "5403:5403/tcp"
+    restart: unless-stopped
+
