@@ -14,4 +14,4 @@ docker run -d \
     -e ROOT_PASSWORD_HASH='$6$YjADoxGRYOwdaK8w$PlVZ2daOEzE4p7PyUDpx0JuoxERmi3cjSclDmtzvVGlSIXiV9izzYJDrmBttNsdlqVfVXwY3/zM2s3Y9O/JzZ.' \
     -p 2222:2222/tcp \
     -p 5403:5403/tcp \
-    pmox-docker-quorum
+    proxmox-docker-qdevice
