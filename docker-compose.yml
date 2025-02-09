@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   proxmox-docker-qdevice:
-    image: pmox-docker-quorum
+    image: proxmox-docker-qdevice
     container_name: proxmox-docker-qdevice
     environment:
       # Example root password hash which is generated with openssl passwd -6 'rootpw' command
