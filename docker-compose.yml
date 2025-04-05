@@ -5,7 +5,7 @@ services:
     container_name: proxmox-docker-qdevice
     environment:
       # Example root password hash which is generated with openssl passwd -6 'rootpw' command
-      - ROOT_PASSWORD_HASH='$6$YjADoxGRYOwdaK8w$PlVZ2daOEzE4p7PyUDpx0JuoxERmi3cjSclDmtzvVGlSIXiV9izzYJDrmBttNsdlqVfVXwY3/zM2s3Y9O/JzZ.'
+      - ROOT_PASSWORD_HASH=$PASSWORD_HASH
     ports:
       - "2222:2222/tcp"
       - "5403:5403/tcp"
